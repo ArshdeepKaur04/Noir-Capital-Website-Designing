@@ -1,0 +1,122 @@
+html {
+    scroll-behavior: smooth; /* Added for smooth scrolling */
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1a1a2e; /* Fallback background for the body */
+    color: #ffffff; /* Default text color */
+}
+
+/* Container for the top section with video */
+.top-section-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Make it full viewport height */
+    overflow: hidden; /* Hide overflowing video parts */
+    display: flex; /* Use flexbox to center content vertically */
+    flex-direction: column;
+}
+
+/* Custom styles for the overlay effect on the background video */
+.bg-overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 0; /* Ensures it's behind content but above video */
+}
+
+/* Style for the background video */
+.background-video {
+    position: absolute; /* Position relative to its parent container */
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Puts the video behind all other content in its container */
+    transform: translateX(-50%) translateY(-50%); /* Centers the video */
+    object-fit: cover; /* Ensures video covers the area without distortion */
+}
+
+.text-custom-red {
+    color: #008080; /* Deep Teal for general headings/stats */
+}
+
+/* New: Define background color for custom-red elements */
+.bg-custom-red {
+    background-color: #008080; /* Deep Teal background */
+}
+
+.text-custom-cyan {
+    color: #00FFFF; /* Explicitly Cyan for specific use */
+}
+
+/* Custom style for the subtle background image in Our Impact section */
+.our-impact-bg {
+    background-color: #FFFFFF; /* Ensures the section has a plain white background */
+}
+
+/* Styles for service box hover effects */
+.service-box-title {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+}
+.service-box:hover .service-box-title {
+    opacity: 0;
+    visibility: hidden;
+}
+.service-box-description {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+}
+.service-box:hover .service-box-description {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Updated: Background for investment tiles with pattern and blend mode */
+.bg-investment-tile {
+    background-color: #008080; /* Base teal color for the blend */
+    background-image: url('https://raw.githubusercontent.com/Anandkumar1996/Image_Hosting/main/subtle-dark-geometric.png');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    border: 12px solid rgba(255, 255, 255, 0.5); /* Reverted to white/transparent border */
+    transition: background-color 500ms ease-in-out, transform 1000ms ease-in-out;
+}
+
+/* New: Hover background color for the revealed description part of investment tiles */
+.bg-hover-gray {
+    background-color: #F0F0F0; /* Slightly darker light grey */
+}
+
+/* New: Text shadow for emojis inside investment tiles */
+.emoji-shadow {
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5); /* Soft white glow */
+}
+
+/* New: Keyframe animation for pulse effect */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply pulse animation on hover to the service icons */
+.service-icon-animation:hover {
+    animation: pulse 0.5s ease-in-out;
+}

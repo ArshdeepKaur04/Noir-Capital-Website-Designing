@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noir Capital</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="relative min-h-screen">
+
+    <!-- Top Section with Video Background -->
+    <div class="relative w-full h-screen overflow-hidden flex flex-col">
+        <!-- Background Video -->
+        <video autoplay loop muted class="background-video">
+            <source src="visuals/videoplayback.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Overlay to darken the video and make text readable -->
+        <div class="bg-overlay absolute inset-0 z-0"></div>
+
+        <!-- Navigation Bar -->
+        <nav class="relative z-10 p-4 md:p-6 flex flex-wrap items-center justify-between text-sm font-semibold text-gray-300">
+            <div class="flex items-center space-x-8">
+                <!-- Company Logo Image -->
+                <img src="visuals/logo.png" alt="Company Logo" class="h-8 md:h-10">
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="hidden md:flex space-x-6 lg:space-x-8">
+                    <a href="#" class="hover:text-white transition duration-300">Home</a>
+                    <a href="#welcome-sectors" class="hover:text-white transition duration-300">About Us</a>
+                    <a href="#featured-investments" class="hover:text-white transition duration-300">Featured Investments</a>
+                    <a href="#our-services" class="hover:text-white transition duration-300">Projects & Services</a>
+                    <a href="#articles-newsletters" class="hover:text-white transition duration-300">News Articles & Blogs</a>
+                </div>
+                <!-- Hamburger Icon for Mobile -->
+                <button class="md:hidden text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Main Content Section (within the video background area) -->
+        <main class="flex flex-col items-center justify-center text-center px-4 py-16 md:py-24 lg:py-32 relative z-10 flex-grow">
+            <div class="max-w-4xl">
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight tracking-tight mb-2">
+                    NOIR
+                </h1>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight tracking-tight text-custom-cyan mb-8">
+                    CAPITAL
+                </h1>
+                <p class="text-lg md:text-xl lg:text-2xl font-medium text-gray-300">
+                    Exceptional returns, unmatched performance.
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Welcome & Sectors We Invest In Section (combined) -->
+    <section id="welcome-sectors" class="py-8 md:py-16 bg-white text-gray-900 relative z-10">
+        <div class="container mx-auto px-4 md:px-8 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-x-16 items-start">
+            <!-- Left Column: Welcome to Noir Capital -->
+            <div class="text-center lg:text-left">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-custom-red mb-8 uppercase">Welcome to Noir Capital</h2>
+                <p class="text-base md:text-lg text-gray-700 leading-relaxed mb-4 text-justify">
+                    At Noir Capital, we believe that smart investing should be accessible to everyone. We pool investments from
+                    individuals and strategically allocate funds across various high-performing assets to ensure consistent growth and maximum returns throughout the year.
+                </p>
+                <p class="text-base md:text-lg text-gray-700 leading-relaxed text-justify">
+                    Our unique approach sets us apart: we empower everyday people to make small, regular contributions that grow significantly over time. Whether you're just starting out or looking to diversify your portfolio, Noir Capital ensures that your money works harder and
+                    smarter. Join us and be part of a financial future where your growth is our mission.
+                </p>
+                <div class="mt-8">
+                    <button class="bg-custom-red text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                        Learn More About Our Firm
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Column: Sectors We Invest In -->
+            <div class="text-center lg:text-left">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-custom-red mb-8 uppercase">Sectors We Invest In</h2>
+                <div class="grid grid-cols-2 gap-6">
+
+                    <!-- Sector Item: Artificial Intelligence & Technology -->
+                    <div class="p-3 bg-gray-100 rounded-lg shadow-md flex items-center justify-center h-20 text-center transform transition duration-200 hover:scale-105 hover:shadow-lg">
+                        <p class="text-base font-bold text-gray-800 leading-tight">Artificial Intelligence & Technology</p>
+                    </div>
+
+                    <!-- Sector Item: FinTech & Financial Services -->
+                    <div class="p-3 bg-gray-100 rounded-lg shadow-md flex items-center justify-center h-20 text-center transform transition duration-200 hover:scale-105 hover:shadow-lg">
+                        <p class="text-base font-bold text-gray-800 leading-tight">FinTech & Financial Services</p>
+                    </div>
+
+                    <!-- Sector Item: Healthcare & Biotech -->
+                    <div class="p-3 bg-gray-100 rounded-lg shadow-md flex items-center justify-center h-20 text-center transform transition duration-200 hover:scale-105 hover:shadow-lg">
+                        <p class="text-base font-bold text-gray-800 leading-tight">Healthcare & Biotech</p>
+                    </div>
+
+                    <!-- Sector Item: Green Energy & Sustainability -->
+                    <div class="p-3 bg-gray-100 rounded-lg shadow-md flex items-center justify-center h-20 text-center transform transition duration-200 hover:scale-105 hover:shadow-lg">
+                        <p class="text-base font-bold text-gray-800 leading-tight">Green Energy & Sustainability</p>
+                    </div>
+
+                    <!-- Sector Item: Real Estate & Infrastructure -->
+                    <div class="p-3 bg-gray-100 rounded-lg shadow-md flex items-center justify-center h-20 text-center transform transition duration-200 hover:scale-105 hover:shadow-lg">
+                        <p class="text-base font-bold text-gray-800 leading-tight">Real Estate & Infrastructure</p>
+                    </div>
+
+                    <!-- Sector Item: Consumer & Retail -->
+                    <div class="p-3 bg-gray-100 rounded-lg shadow-md flex items-center justify-center h-20 text-center transform transition duration-200 hover:scale-105 hover:shadow-lg">
+                        <p class="text-base font-bold text-gray-800 leading-tight">Consumer & Retail</p>
+                    </div>
+
+                    <!-- Sector Item: Media & Entertainment -->
+                    <div class="p-3 bg-gray-100 rounded-lg shadow-md flex items-center justify-center h-20 text-center transform transition duration-200 hover:scale-105 hover:shadow-lg">
+                        <p class="text-base font-bold text-gray-800 leading-tight">Media & Entertainment</p>
+                    </div>
+
+                    <!-- Sector Item: Web3 & Blockchain -->
+                    <div class="p-3 bg-gray-100 rounded-lg shadow-md flex items-center justify-center h-20 text-center transform transition duration-200 hover:scale-105 hover:shadow-lg">
+                        <p class="text-base font-bold text-gray-800 leading-tight">Web3 & Blockchain</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Featured Investments Section -->
+    <section id="featured-investments" class="py-12 md:py-20 bg-white text-gray-900 relative z-10">
+        <div class="container mx-auto px-4 md:px-8 lg:px-16">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-custom-red mb-12 uppercase text-center">Our Featured Investments</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Investment Tile 1: FinGenius -->
+                <div class="relative rounded-lg shadow-lg aspect-square w-full overflow-hidden cursor-pointer group bg-investment-tile">
+                    <!-- Front content (visible normally) -->
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-6 transition-transform duration-300 transform group-hover:-translate-y-full">
+                        <p class="text-white text-6xl mb-2 emoji-shadow">💡</p> <!-- Lightbulb for AI/FinTech -->
+                        <h3 class="text-white text-xl font-extrabold uppercase text-center leading-tight">FinGenius – FinTech</h3>
+                    </div>
+                    <!-- Back content (visible on hover) -->
+                    <div class="absolute inset-0 flex items-center justify-center p-6 text-gray-800 transition-transform duration-300 transform translate-y-full group-hover:translate-y-0 bg-hover-gray">
+                        <p class="text-base text-center leading-relaxed">
+                            AI-powered personal finance platform transforming how users manage savings. Led Seed Round with ₹1.2 Cr, scaled to 100K+ active users in 6 months.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Investment Tile 2: BioZen Labs -->
+                <div class="relative rounded-lg shadow-lg aspect-square w-full overflow-hidden cursor-pointer group bg-investment-tile">
+                    <!-- Front content (visible normally) -->
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-6 transition-transform duration-300 transform group-hover:-translate-y-full">
+                        <p class="text-white text-6xl mb-2 emoji-shadow">🧬</p> <!-- DNA/Microscope for Healthcare & Biotech -->
+                        <h3 class="text-white text-xl font-extrabold uppercase text-center leading-tight">BioZen Labs – Healthcare & Biotech</h3>
+                    </div>
+                    <!-- Back content (visible on hover) -->
+                    <div class="absolute inset-0 flex items-center justify-center p-6 text-gray-800 transition-transform duration-300 transform translate-y-full group-hover:translate-y-0 bg-hover-gray">
+                        <p class="text-base text-center leading-relaxed">
+                            Pioneers in affordable diagnostics and telehealth solutions across rural India. Invested during pre-Series A phase to expand vital healthcare access.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Investment Tile 3: Vireon Energy -->
+                <div class="relative rounded-lg shadow-lg aspect-square w-full overflow-hidden cursor-pointer group bg-investment-tile">
+                    <!-- Front content (visible normally) -->
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-6 transition-transform duration-300 transform group-hover:-translate-y-full">
+                        <p class="text-white text-6xl mb-2 emoji-shadow">☀️</p> <!-- Sun for Green Tech -->
+                        <h3 class="text-white text-xl font-extrabold uppercase text-center leading-tight">Vireon Energy – Green Tech</h3>
+                    </div>
+                    <!-- Back content (visible on hover) -->
+                    <div class="absolute inset-0 flex items-center justify-center p-6 text-gray-800 transition-transform duration-300 transform translate-y-full group-hover:translate-y-0 bg-hover-gray">
+                        <p class="text-base text-center leading-relaxed">
+                            Accelerating solar microgrid deployments in Tier 2 cities. Our Series A investment fueled 3x growth in 18 months, advancing green energy solutions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Investment Tile 4: BlockHaven -->
+                <div class="relative rounded-lg shadow-lg aspect-square w-full overflow-hidden cursor-pointer group bg-investment-tile">
+                    <!-- Front content (visible normally) -->
+                    <div class="absolute inset-0 flex flex-col items-center justify-center p-6 transition-transform duration-300 transform group-hover:-translate-y-full">
+                        <p class="text-white text-6xl mb-2 emoji-shadow">🔗</p> <!-- Link/Chain for Blockchain & Web3 -->
+                        <h3 class="text-white text-xl font-extrabold uppercase text-center leading-tight">BlockHaven – Blockchain & Web3</h3>
+                    </div>
+                    <!-- Back content (visible on hover) -->
+                    <div class="absolute inset-0 flex items-center justify-center p-6 text-gray-800 transition-transform duration-300 transform translate-y-full group-hover:translate-y-0 bg-hover-gray">
+                        <p class="text-base text-center leading-relaxed">
+                            Supporting decentralized identity and smart contract infrastructure. Strategic investment to fuel product launch and marketing for Web3's future.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section (with plain white background and new layout) -->
+    <section class="py-8 md:py-16 bg-white text-gray-900 relative z-10 our-impact-bg">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-custom-red mb-12 uppercase">OUR IMPACT</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-y-10 lg:gap-y-0 lg:gap-x-4 justify-items-center">
+                <!-- Stat Item: Total Companies Backed -->
+                <div class="flex flex-col justify-center items-center px-2">
+                    <p class="text-5xl md:text-6xl font-extrabold text-custom-red leading-none mb-2 md:mb-4">30+</p>
+                    <p class="text-sm md:text-base font-extrabold text-gray-700 uppercase tracking-wider">Total Companies <br> Backed</p>
+                </div>
+                <!-- Stat Item: Successful Exits -->
+                <div class="flex flex-col justify-center items-center px-2">
+                    <p class="text-5xl md:text-6xl font-extrabold text-custom-red leading-none mb-2 md:mb-4">5</p>
+                    <p class="text-sm md:text-base font-extrabold text-gray-700 uppercase tracking-wider">Successful Exits with avg. 4.5x return</p>
+                </div>
+                <!-- Stat Item: Assets Under Management -->
+                <div class="flex flex-col justify-center items-center px-2">
+                    <p class="text-5xl md:text-6xl font-extrabold text-custom-red leading-none mb-2 md:mb-4">₹50 Crores+</p>
+                    <p class="text-sm md:text-base font-extrabold text-gray-700 uppercase tracking-wider">Assets Under Management</p>
+                </div>
+                <!-- Stat Item: Geographic Reach -->
+                <div class="flex flex-col justify-center items-center px-2">
+                    <p class="text-5xl md:text-6xl font-extrabold text-custom-red leading-none mb-2 md:mb-4">3+</p>
+                    <p class="text-sm md:text-base font-extrabold text-gray-700 uppercase tracking-wider">International Ventures (Geographic Reach)</p>
+                </div>
+                <!-- Stat Item: Sector Spread -->
+                <div class="flex flex-col justify-center items-center px-2">
+                    <p class="text-5xl md:text-6xl font-extrabold text-custom-red leading-none mb-2 md:mb-4">8</p>
+                    <p class="text-sm md:text-base font-extrabold text-gray-700 uppercase tracking-wider">Sector Spread <br> (Core Industries)</p>
+                </div>
+            </div>
+            <!-- Call to Action Buttons -->
+            <div class="mt-16 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <button class="bg-custom-red text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    Learn More About Our Investments
+                </button>
+                <button class="bg-custom-red text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                    Get In Touch
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services Section -->
+    <section id="our-services" class="py-12 md:py-20 bg-[#1a1a2e] text-white relative z-10">
+        <div class="container mx-auto px-4 md:px-8 lg:px-16">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-custom-red mb-4 uppercase text-center">Our Services</h2>
+            <p class="text-lg md:text-xl text-white leading-relaxed mb-12 text-center max-w-2xl mx-auto">
+                Strategic consulting for businesses that demand results.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Service Item: Building a Business Plan -->
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-16 h-16 rounded-full bg-custom-red flex items-center justify-center shadow-md service-icon-animation">
+                        <p class="text-white text-3xl">📈</p> <!-- Chart Increasing emoji -->
+                    </div>
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-extrabold text-white uppercase mb-2">Building a Business Plan</h3>
+                        <p class="text-base text-white leading-relaxed">
+                            We help entrepreneurs craft clear, actionable, and investor-ready business plans. Our team converts your vision into a compelling narrative with solid financials, market analysis, and strategic direction to attract investors and partners.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service Item: Strategy and Operation -->
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-16 h-16 rounded-full bg-custom-red flex items-center justify-center shadow-md service-icon-animation">
+                        <p class="text-white text-3xl">⚙️</p> <!-- Gear emoji -->
+                    </div>
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-extrabold text-white uppercase mb-2">Strategy and Operation</h3>
+                        <p class="text-base text-white leading-relaxed">
+                            We align your business vision with practical execution, optimizing operations and designing strategic frameworks for growth. We provide actionable insights and hands-on support for scaling, market entry, and workflow improvement.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service Item: Improving Processes -->
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-16 h-16 rounded-full bg-custom-red flex items-center justify-center shadow-md service-icon-animation">
+                        <p class="text-white text-3xl">🚀</p> <!-- Rocket emoji -->
+                    </div>
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-extrabold text-white uppercase mb-2">Improving Processes</h3>
+                        <p class="text-base text-white leading-relaxed">
+                            Efficiency is the backbone of any successful organization. At Noir Capital, we specialize in identifying bottlenecks and streamlining operations to help your business run smarter, not harder. Our approach analyzes workflows, identifies waste, and designs custom solutions to enhance productivity and output quality for agile and effective business functions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service Item: Human Capital -->
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-16 h-16 rounded-full bg-custom-red flex items-center justify-center shadow-md service-icon-animation">
+                        <p class="text-white text-3xl">👥</p> <!-- People/Silhouettes emoji -->
+                    </div>
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-extrabold text-white uppercase mb-2">Human Capital</h3>
+                        <p class="text-base text-white leading-relaxed">
+                            We help align your talent strategy with business goals, from attracting top talent to leadership development. Our tailored solutions optimize team structure, improve engagement, and unlock workforce potential to build lasting results.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service Item: Investment Management -->
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0 w-16 h-16 rounded-full bg-custom-red flex items-center justify-center shadow-md service-icon-animation">
+                        <p class="text-white text-3xl">💰</p> <!-- Money Bag emoji -->
+                    </div>
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-extrabold text-white uppercase mb-2">Investment Management</h3>
+                        <p class="text-base text-white leading-relaxed">
+                            We provide strategic investment management solutions to preserve wealth and maximize returns. Our expert team offers data-driven insights, risk-managed portfolios, and personalized strategies tailored to your unique financial vision.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles, Market Opinions, Newsletters Section -->
+    <section id="articles-newsletters" class="py-12 md:py-20 bg-white text-gray-900 relative z-10">
+        <div class="container mx-auto px-4 md:px-8 lg:px-16">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 uppercase">Articles, Market Opinions, Newsletters</h2>
+                <a href="#" class="text-custom-red font-semibold hover:underline">View all</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Article Card 1 -->
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/600x300/000000/FFFFFF?text=Hedge+Funds" alt="Hedge Funds Article Image" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl md:text-2xl font-extrabold text-gray-900 mb-2 leading-tight">Hedge Funds: What are they, How do they work, & Pros and Cons</h3>
+                        <p class="text-base text-gray-700 leading-relaxed mb-4 flex-grow">
+                            Hedge funds are alternative investments that use pooled funds and employ various strategies to earn active returns or alpha for their investors. Learn more about how they work, their pros, and cons.
+                        </p>
+                        <a href="https://www.tickertape.in/blog/hedge-funds/" target="_blank" rel="noopener noreferrer" class="text-custom-red font-bold text-lg hover:underline self-start">Read more</a>
+                    </div>
+                </div>
+
+                <!-- Article Card 2 -->
+                <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="https://placehold.co/600x300/000000/FFFFFF?text=All+About+Hedge+Funds" alt="All About Hedge Funds Article Image" class="w-full h-48 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl md:text-2xl font-extrabold text-gray-900 mb-2 leading-tight">All you need to know about hedge funds</h3>
+                        <p class="text-base text-gray-700 leading-relaxed mb-4 flex-grow">
+                            Hedge funds, popular among high net worth individuals, are professionally managed investment funds that employ complex strategies and leverage to generate high returns. Here's what you need to know.
+                        </p>
+                        <a href="https://economictimes.indiatimes.com/wealth/personal-finance-news/all-you-need-to-know-about-hedge-funds/articleshow/120622533.cms?from=mdr" target="_blank" rel="noopener noreferrer" class="text-custom-red font-bold text-lg hover:underline self-start">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#1a1a2e] text-white py-12 md:py-20 relative z-10">
+        <div class="container mx-auto px-4 md:px-8 lg:px-16 grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Contact Form Column -->
+            <div>
+                <h3 class="text-2xl font-extrabold text-custom-red mb-6 uppercase">Get in Touch</h3>
+                <form class="space-y-4">
+                    <div>
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="w-full px-4 py-3 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-custom-red transition duration-300">
+                    </div>
+                    <div>
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-custom-red transition duration-300">
+                    </div>
+                    <div>
+                        <label for="message" class="sr-only">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" class="w-full px-4 py-3 rounded-md bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-custom-red transition duration-300"></textarea>
+                    </div>
+                    <button type="submit" class="bg-custom-red text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Address, Map, and Contact Details Column -->
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-2xl font-extrabold text-custom-red mb-4 uppercase">Our Office</h3>
+                    <p class="text-gray-300">
+                        Noir Capital Headquarters<br>
+                        123 Investment Avenue<br>
+                        Financial District, New Delhi, 110001<br>
+                        India
+                    </p>
+                </div>
+
+                <!-- Google Map -->
+                <div class="w-full h-64 rounded-lg overflow-hidden shadow-lg">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.54015690048!2d77.04417188046875!3d28.52728038936647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b0a3eb241%3A0x1d5423c880df9618!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1718919634861!5m2!1sen!2sin"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+
+                <!-- Email and Phone -->
+                <div>
+                    <h3 class="text-2xl font-extrabold text-custom-red mb-4 uppercase">Contact Us</h3>
+                    <p class="text-gray-300 mb-2">
+                        Email: <a href="mailto:thenoircap@gmail.com" class="hover:underline">thenoircap@gmail.com</a>
+                    </p>
+                    <p class="text-gray-300">
+                        Phone: <a href="tel:+911234567890" class="hover:underline">+91 12345 67890</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
