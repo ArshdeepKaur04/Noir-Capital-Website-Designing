@@ -30,23 +30,24 @@ CSS3: Custom styles and animations (scroll-behavior: smooth for smooth scrolling
 
 JavaScript: For minor interactive elements (like the mobile hamburger menu toggle, if implemented, and to trigger animations).
 
-Setup and Installation
+# Setup and Installation
 To get a local copy up and running, follow these simple steps:
 
-Clone the repository:
-
+1. Clone the repository:
 git clone https://github.com/your-username/noir-capital-website.git
 
-Navigate to the project directory:
-
+2. Navigate to the project directory:
 cd noir-capital-website
 
 # Usage
 Simply open the index.html file in your web browser. There's no build process required for this static site.
 
 /* Open the Main HTML file */
+
 open index.html # On macOS
+
 start index.html # On Windows
+
 xdg-open index.html # On Linux
 
 # Contributing
