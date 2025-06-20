@@ -41,23 +41,18 @@ Navigate to the project directory:
 
 cd noir-capital-website
 
-Usage
+# Usage
 Simply open the index.html file in your web browser. There's no build process required for this static site.
 
-# Open the main HTML file
+/* Open the Main HTML file */
 open index.html # On macOS
 start index.html # On Windows
 xdg-open index.html # On Linux
 
-Contributing
+# Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-Fork the Project
-
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-
-Push to the Branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
+1. Fork the Project
+2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+4. Push to the Branch (git push origin feature/AmazingFeature)
+5. Open a Pull Request
